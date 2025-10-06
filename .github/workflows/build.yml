@@ -6,7 +6,8 @@ on:
       - master
 
 jobs:
-  build:
+  build-android:
+    name: CounterApp
     runs-on: ubuntu-latest
 
     steps:
@@ -15,6 +16,7 @@ jobs:
 
     - name: Build APK with Buildozer
       uses: ArtemSBulgakov/buildozer-action@v1
+      id: buildozer
       with:
         workdir: '.'
         buildozer_version: stable
