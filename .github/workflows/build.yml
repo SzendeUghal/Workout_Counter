@@ -14,10 +14,8 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build APK with Buildozer
-      uses: ArtemSBulgakov/buildozer-action@v1
+      uses: tlambert03/buildozer-action@v1
       with:
-        workdir: '.'
-        buildozer_version: stable
         command: buildozer android debug
 
     - name: Upload APK
