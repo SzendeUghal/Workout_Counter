@@ -1,0 +1,15 @@
+# Python virtual environments
+venv/
+kivyenv/
+__pycache__/
+*.pyc
+
+# Buildozer and Python-for-Android build files
+.buildozer/
+bin/
+*.apk
+*.aab
+
+# System files
+.DS_Store
+Thumbs.db
